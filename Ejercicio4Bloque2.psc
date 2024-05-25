@@ -1,10 +1,16 @@
-Algoritmo Ejercicio4Bloque2
-	Escribir "Vamos a calcular el area de un triangulo"
-	Escribir "Digite el valor de la base"
-	Leer Base 
-	Escribir "Digite el valor de la altura" 
-	Leer Altura 
-	Area = Base * altura / 2
-	Escribir "El area de este triangulo es " Area
-	FinAlgoritmo
-	
+Algoritmo Ejercicio3Bloque2
+	Escribir 'Ingrese una frase'
+	Leer frase
+	TAMANODEFRASE <- Longitud(frase)
+	Escribir TAMANODEFRASE
+	fraseTemporal <- ''
+	Para contador<-TAMANODEFRASE Hasta 1 Con Paso contador-1 Hacer
+		fraseTemporal <- fraseTemporal+SubCadena(frase,contador,contador)
+	FinPara
+	Escribir fraseTemporal
+	Si Mayusculas(frase)==Mayusculas(fraseTemporal) Entonces
+		Escribir 'Esta palabra es un Polindromo'
+	SiNo
+		Escribir 'Esta palabra no es un Polindromo'
+	FinSi
+FinAlgoritmo
